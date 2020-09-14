@@ -1,0 +1,14 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$theme-colors: (
+ "primary": #bada55 
+);
+@function numero($num: 40px){
+    @return  $num/2;
+  }
+$margin:5px 5px 5px 5px;
+$margin20:numero() numero() numero() numero() ;
+

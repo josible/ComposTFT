@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: $font-family-sans-serif;
+  //background-color: $uoc-bg;
+  //color: $uoc-corporate;
+}
+
+.grid {
+  //height: 100vh;
+  display: block;
+  text-align: center;
+}
+.grid__cities{
+  display:block;
+  align-items: center;  
+  margin:auto;
+  text-align: center;
+
+  img{  
+    margin:$margin20;
+    max-width: 150px;
+    max-height: 150px;
+    margin:auto;    
+  } 
+}
+.grid__main { 
+  img{  
+      margin:$margin20;
+      //min-width: 80%;
+      max-width: 100%;
+      display:flex;
+      margin:auto;
+      
+    } 
+    display:flex;
+    align-items: center;   
+    
+  }
+  .grid__city1{
+
+    text-align: center;
+    img{  
+      margin:$margin20;
+      max-width: 150px;
+      max-height: 150px;
+      display:block;
+      margin:auto;
+      
+    } 
+  }
+  .grid__city2{
+
+    text-align: center;
+    img{  
+      margin:$margin20;
+      max-width: 150px;
+      max-height: 150px;
+      display:block;
+      margin:auto;
+      
+    } 
+  }
+  .grid__city3{
+
+    text-align: center;
+    img{  
+      margin:$margin20;
+      max-width: 150px;
+      max-height: 150px;
+      display:block;
+      margin:auto;
+      
+    } 
+  }
+  .grid__city4{
+
+    text-align: center;
+    img{  
+      margin:$margin20;
+      max-width: 150px;
+      max-height: 150px;
+      display:block;
+      margin:auto;
+      
+    }
+  } 
+
+
+
+
+
+@supports (display: grid) {
+  .grid {
+    //height: 100vh;
+    display: grid;
+    grid-template-areas: "title1 title1 title2 title2"
+                         "main main city1 city2"
+                         "main main city3 city4";
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr; 
+    
+  }
+  .grid__main { 
+    grid-area: main; 
+    img{  
+        margin:$margin20;
+        //min-width: 80%;
+        max-width: 100%;
+        display:block;
+        margin:auto;
+        
+      } 
+      display:flex;
+      align-items: center;   
+      
+    }
+
+  .grid__title1{
+    grid-area: title1; 
+    text-align: center;
+  
+  }
+  .grid__title2{
+    grid-area: title2; 
+    text-align: center;
+  }
+  
+  .grid__city1{
+    grid-area: city1; 
+    text-align: center;
+    img{  
+      margin:$margin20;
+      max-width: 150px;
+      max-height: 150px;
+      display:block;
+      margin:auto;
+      
+    } 
+  }
+  .grid__city2{
+    grid-area: city2; 
+    text-align: center;
+    img{  
+      margin:$margin20;
+      max-width: 150px;
+      max-height: 150px;
+      display:block;
+      margin:auto;
+      
+    } 
+  }
+  .grid__city3{
+    grid-area: city3; 
+    text-align: center;
+    img{  
+      margin:$margin20;
+      max-width: 150px;
+      max-height: 150px;
+      display:block;
+      margin:auto;
+      
+    } 
+  }
+  .grid__city4{
+    grid-area: city4; 
+    text-align: center;
+    img{  
+      margin:$margin20;
+      max-width: 150px;
+      max-height: 150px;
+      display:block;
+      margin:auto;
+      
+    } 
+  }
+  @media (min-width: 320px) {
+    .grid {
+      //height: 100vh;
+      display: grid;
+      grid-template-areas: "title1"
+                           "main"
+                           "title2"
+                           "city1"
+                           "city2"
+                           "city3"
+                           "city4"
+                           
+                           ;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 4fr 1fr 4fr 4fr 4fr 4fr; 
+      
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .grid {
+      display: grid;
+      grid-template-areas: "title1 title1 title2 title2"
+                           "main main city1 city2"
+                           "main main city3 city4";
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 2fr 2fr; 
+      
+    }
+  }
+  
+
+}
+
+
+
+.common-flex{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px ;
+  border-top: medium dashed black;
+  justify-content: center;
+  margin: $margin20;
+  img{  
+    margin:$margin20;
+    max-width: 200px;
+  }
+  
+}
+
+
+.common-flex__actors {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin:$margin20;
+  background-color: #EDEDED;
+  img{
+    max-height: 130px;
+  }
+  
+  
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-weight: bold;
+
+}
+
+
