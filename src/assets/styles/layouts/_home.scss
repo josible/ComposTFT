@@ -2,8 +2,12 @@ body {
   margin: 0;
   padding: 30px;
   font-family: $font-family-sans-serif;
+  background-color: black;
   //background-color: $uoc-bg;
   //color: $uoc-corporate;
+}
+.container{
+  background-color: black;
 }
 
 .grid {
